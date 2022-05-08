@@ -4,9 +4,8 @@ import HttpsIcon from "@material-ui/icons/Https";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/styles";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 const useStyles = makeStyles(() => ({
-  
   MuiSvgIcon: {
     width: "50px",
   },
@@ -14,12 +13,11 @@ const useStyles = makeStyles(() => ({
 
 const Register = () => {
   const classes = useStyles();
-  const navigate = useNavigate()
-  const handleclick =()=>{
-    console.log("hello")
-    navigate("/deerim")
-
-}
+  const navigate = useNavigate();
+  const handleclick = () => {
+    console.log("hello");
+    navigate("/deerim");
+  };
   return (
     <>
       {" "}

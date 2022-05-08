@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
   },
   labelContainer: {
     padding: 0,
-},
+  },
 }));
 
 export default function SimpleTabs() {
@@ -69,10 +69,10 @@ export default function SimpleTabs() {
           onChange={handleChange}
           aria-label="simple tabs example"
           TabIndicatorProps={{
-            style: { backgroundColor: "white"}
+            style: { backgroundColor: "white" },
           }}
         >
-          <Tab label="Deerim" {...a11yProps(0)}  />
+          <Tab label="Deerim" {...a11yProps(0)} />
           <Tab label="Recharge" {...a11yProps(1)} />
           <Tab label="Withdraw" {...a11yProps(2)} />
           <Tab label="Invite" {...a11yProps(3)} />

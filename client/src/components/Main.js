@@ -14,7 +14,7 @@ const Main = () => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                Style={{height:"100%"}}
+                Style={{ height: "100%" }}
             >
                 <Grid container
                     direction="column"
@@ -24,7 +24,7 @@ const Main = () => {
                 </Grid>
                 <Grid style={{ width: "33.4%" }}>
                     <Tabs />
-                   
+
                 </Grid>
             </Grid>
         </>

@@ -5,17 +5,15 @@ import GetAppIcon from "@material-ui/icons/GetApp";
 import Tabs2 from "./Tabs2";
 import d2 from "./d2.png";
 const useStyles = makeStyles(() => ({
- 
-    MuiSvgIcon: {
-      width: "50px",
-      backgroundColor:"#dd7575",
-      height:"50px",
-      borderRadius: "8px"
-       
-    },
-  }));
+  MuiSvgIcon: {
+    width: "50px",
+    backgroundColor: "#dd7575",
+    height: "50px",
+    borderRadius: "8px",
+  },
+}));
 const Deerim = () => {
-    const classes = useStyles();
+  const classes = useStyles();
   return (
     <>
       <Grid
@@ -38,7 +36,7 @@ const Deerim = () => {
         >
           <img src={d2} style={{ width: "80px" }}></img>
           <Grid style={{ width: "80%" }}></Grid>
-          <GetAppIcon className={classes.MuiSvgIcon}  />
+          <GetAppIcon className={classes.MuiSvgIcon} />
         </Grid>
         <Grid style={{ width: "47%" }}>
           <Tabs2 />

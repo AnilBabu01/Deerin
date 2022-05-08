@@ -6,13 +6,13 @@ import Deerim from './components/Deerim';
 function App() {
   return (
     <>
-     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Main/>} />
-        <Route path="/deerim" element={<Deerim/>} />
-      </Routes>
-    </BrowserRouter>
-       
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/deerim" element={<Deerim />} />
+        </Routes>
+      </BrowserRouter>
+
     </>
   );
 }

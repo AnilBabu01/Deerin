@@ -1,14 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Login from './Login';
-import Register from './Register';
-import Qlogin from './Qlogin';
+import React from "react";
+import PropTypes from "prop-types";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Typography from "@material-ui/core/Typography";
+import Box from "@material-ui/core/Box";
+import Login from "./Login";
+import Register from "./Register";
+import Qlogin from "./Qlogin";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -38,7 +38,7 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
   };
 }
 
@@ -59,21 +59,32 @@ export default function SimpleTabs() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{paddingLeft: "35px",backgroundColor:"#b32424",height:"60px"}}>
-        <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
+      <AppBar
+        position="static"
+        style={{
+          paddingLeft: "35px",
+          backgroundColor: "#b32424",
+          height: "60px",
+        }}
+      >
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="simple tabs example"
+        >
           <Tab label="Login" {...a11yProps(0)} />
           <Tab label="Q login" {...a11yProps(1)} />
           <Tab label="Register" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        <Login/>
+        <Login />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Qlogin/>
+        <Qlogin />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <Register/>
+        <Register />
       </TabPanel>
     </div>
   );
